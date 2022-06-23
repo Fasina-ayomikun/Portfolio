@@ -90,7 +90,7 @@ const Wrapper = styled.div`
   .form {
     width: 100%;
 
-    height: calc(100vh - 180px);
+    height: auto;
   }
   .form-container {
     /* background-color: red; */
@@ -153,26 +153,19 @@ const Wrapper = styled.div`
       transition: 0.5s ease-in-out;
     }
   }
-  @media (max-width: 768px) {
-    .form {
-      height: auto;
-    }
-    .form-container {
-      row-gap: 20px;
-      grid-template-columns: 1fr;
-    }
-    .email {
-      grid-column: auto;
-    }
-    .msg {
-      grid-column: auto;
-    }
-    .submit-btn {
-      grid-column: auto;
-    }
-  }
   @media (max-width: 500px) {
     padding: 0 10px;
+    .form-container {
+      width: 100%;
+    }
+    h2 {
+      font-size: 1.65rem;
+    }
+  }
+  @media (min-height: 856px) {
+    .form {
+      height: calc(100vh - 180px);
+    }
   }
 `;
 export default ContactForm;
