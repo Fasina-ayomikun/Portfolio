@@ -3,6 +3,7 @@ import image2 from "./images/countries.png";
 import image3 from "./images/tasty-kitchen.png";
 import image4 from "./images/space.png";
 import image5 from "./images/time.png";
+import image6 from "./images/beautyhairs.png";
 
 export const projects = [
   {
@@ -39,5 +40,12 @@ export const projects = [
     name: "Time Tracker",
     github_url: "https://github.com/Fasina-ayomikun/Time-Tracker",
     profile_url: "https://frontend-timetracker.netlify.app",
+  },
+  {
+    id: "6",
+    url: image6,
+    name: "Beauty Hairs",
+    github_url: "https://github.com/Fasina-ayomikun/Beauty-Hairs",
+    profile_url: "https://beauty-hairs.netlify.app",
   },
 ];
